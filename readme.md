@@ -1,4 +1,4 @@
-# Uuhuw Chat with Laravel and VueJS
+# Uuhuw Chat with Laravel 5.4 and VueJS
 
 This application is a real time chat made while I was studying VueJS. I used Laravel framework version 5.4 as backend
 
@@ -24,38 +24,42 @@ I made all project in nearly 16 hours split on three days.
 ```bash
     cd uhhuwchat
 ```
-- 2.2 - On "api", execute the command
+- 2.2 - On "uuhuwchat" folder, execute the command
+```bash
+    php artisan key:generate
+```
+- 2.3 - On "uuhuwchat" folder, execute the command
 ```bash
     composer install
 ```
-- _2.2.1 - If you don't have the composer in your computer, please <a href="https://getcomposer.org" target="_blank">click here</a>_
+- _2.3.1 - If you don't have the composer in your computer, please <a href="https://getcomposer.org" target="_blank">click here</a>_
 
-- 2.3 step:
+- 2.4 step:
 ```bash
     cp .env.example .env
 ```
-- 2.4 step:
-```bash
-    configuring your databasec in .env file
-```
 - 2.5 step:
 ```bash
-    php artisan migrate:install
+    configuring your databasec inside the .env file
 ```
 - 2.6 step:
 ```bash
-    php artisan migrate
+    php artisan migrate:install
 ```
 - 2.7 step:
 ```bash
-    composer dump-autoload
+    php artisan migrate
 ```
 - 2.8 step:
+```bash
+    composer dump-autoload
+```
+- 2.9 step:
 ```bash
     php artisan db:seed
 ```
 - Default Users:
-```bash
+```
     After that, these users will be create in your database as default
     
     User 01
@@ -72,14 +76,16 @@ I made all project in nearly 16 hours split on three days.
 ```
 **3 - Running the API**
 
-- 3.1 - Execute this command on terminal for start API service
+- 3.1 - Execute this command on terminal for start the server
 ```bash
     php artisan serve
 ```
 
-- 3.2 - Copy the address below and paste on your browser
+- 3.2 - Click on or copy the address below and paste on your browser
 
     <a href="http://localhost:8000/chat" target="_blank">http://localhost:8000/chat</a>
+    or
+    <a href="http://127.0.0.1:8000/chat" target="_blank">http://127.0.0.1:8000/chat</a>
     
 **4 - How can I test?**
 - 4.1 Open two different browsers like Safari, Google Chrome, Mozilla Firefox, or Opera and enter the address above.
