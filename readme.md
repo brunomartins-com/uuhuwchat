@@ -18,7 +18,7 @@ I made all project in nearly 16 hours split on three days.
 ```
 - _If you don't have the git in your computer, please <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">click here</a>)_
 
-**2 - Configuring the API**
+**2 - Configuring the Application**
  
 - 2.1 - Go to the "api" folder by terminal
 ```bash
@@ -34,27 +34,48 @@ I made all project in nearly 16 hours split on three days.
 ```
 - _2.3.1 - If you don't have the composer in your computer, please <a href="https://getcomposer.org" target="_blank">click here</a>_
 
-- 2.4 step:
+**3 - Configuring the Database**
+
+- 3.1 step:
 ```bash
     cp .env.example .env
 ```
-- 2.5 step:
+- 3.2 step:
 ```bash
-    configuring your databasec inside the .env file
+    touch database/database.sqlite
 ```
-- 2.6 step:
+- 3.3 step:
+```bash
+    Open the .env file and change these lines:
+    
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=homestead
+    DB_USERNAME=homestead
+    DB_PASSWORD=secret
+    
+    for these:
+    
+    DB_CONNECTION=sqlite
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_USERNAME=homestead
+    DB_PASSWORD=secret
+```
+- 3.4 step:
 ```bash
     php artisan migrate:install
 ```
-- 2.7 step:
+- 3.5 step:
 ```bash
     php artisan migrate
 ```
-- 2.8 step:
+- 3.6 step:
 ```bash
     composer dump-autoload
 ```
-- 2.9 step:
+- 3.7 step:
 ```bash
     php artisan db:seed
 ```
@@ -74,23 +95,23 @@ I made all project in nearly 16 hours split on three days.
         Email: lois@email.com
         Password: 654321
 ```
-**3 - Running the API**
+**4 - Running the API**
 
-- 3.1 - Execute this command on terminal for start the server
+- 4.1 - Execute this command on terminal for start the server
 ```bash
     php artisan serve
 ```
 
-- 3.2 - Click on or copy the address below and paste on your browser
+- 4.2 - Click on or copy the address below and paste on your browser
 
     <a href="http://localhost:8000/chat" target="_blank">http://localhost:8000/chat</a>
     or
     <a href="http://127.0.0.1:8000/chat" target="_blank">http://127.0.0.1:8000/chat</a>
     
-**4 - How can I test?**
-- 4.1 Open two different browsers like Safari, Google Chrome, Mozilla Firefox, or Opera and enter the address above.
-- 4.2 Use those two default users above in each browser to enter on chat.
-- 4.3 Send messages and enjoy with the real time updating.
+**5 - How can I test?**
+- 5.1 Open two different browsers like Safari, Google Chrome, Mozilla Firefox, or Opera and enter the address above.
+- 5.2 Use those two default users above in each browser to enter on chat.
+- 5.3 Send messages and enjoy with the real time updating.
 
 ## Demo
 - <a href="http://uuhuwchat.brunomartins.com/chat" target="_blank">http://uuhuwchat.brunomartins.com/chat</a>
