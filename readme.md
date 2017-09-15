@@ -95,16 +95,16 @@ I made all project in nearly 16 hours split on three days.
 
 You will need a real time service as Pusher for made it happen.
 
-- 5.1 - Access this website <a href="https://pusher.com" target="_blank">www.pusher.com</a> and create a free account.
-- 5.2 - After login, go to "Your Apps" in left side bar menu and create a new app.
-- 5.3 - At the end of creation, uou will see some data like:
+- 4.1 - Access this website <a href="https://pusher.com" target="_blank">www.pusher.com</a> and create a free account.
+- 4.2 - After login, go to "Your Apps" in left side bar menu and create a new app.
+- 4.3 - At the end of creation, uou will see some data like:
 ```
 app_id = "XXXXX"
 key = "XXXXXXXXXXXXXXXXXXX"
 secret = "XXXXXXXXXXXXXXXXXXXX"
 cluster = "XXX"
 ```  
-- 5.4 - Copy these information and paste in your .env file (in the end of file)
+- 4.4 - Copy these information and paste in your .env file (in the end of file)
 ```
 PUSHER_APP_ID=PASTE HERE
 PUSHER_APP_KEY=PASTE HERE
