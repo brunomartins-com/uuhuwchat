@@ -51,7 +51,7 @@ I made all project in nearly 16 hours split on three days.
     DB_USERNAME=homestead
     DB_PASSWORD=secret
     
-    for these:
+    to these:
     
     DB_CONNECTION=sqlite
     DB_HOST=127.0.0.1
