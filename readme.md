@@ -24,11 +24,7 @@ I made all project in nearly 16 hours split on three days.
 ```bash
     cd uhhuwchat
 ```
-- 2.2 - On "uuhuwchat" folder, execute the command
-```bash
-    php artisan key:generate
-```
-- 2.3 - On "uuhuwchat" folder, execute the command
+- 2.2 - On "uuhuwchat" folder, execute this command
 ```bash
     composer install
 ```
@@ -97,12 +93,15 @@ I made all project in nearly 16 hours split on three days.
 ```
 **4 - Running the API**
 
-- 4.1 - Execute this command on terminal for start the server
+- 4.1 - On "uuhuwchat" folder, execute the command to generate a key
+```bash
+    php artisan key:generate
+```
+- 4.2 - Execute this command on terminal for start the server
 ```bash
     php artisan serve
 ```
-
-- 4.2 - Click on or copy the address below and paste on your browser
+- 4.3 - Click on or copy the address below and paste on your browser
 
     <a href="http://localhost:8000/chat" target="_blank">http://localhost:8000/chat</a>
     or
