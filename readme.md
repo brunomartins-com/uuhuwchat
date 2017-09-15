@@ -111,6 +111,14 @@ PUSHER_APP_KEY=PASTE HERE
 PUSHER_APP_SECRET=PASTE HERE
 PUSHER_APP_CLUSTER=PASTE HERE
 ```
+- 4.5 - Also, change the "BROADCAST_DRIVER" in your .env file (probably line 14)
+```
+From
+BROADCAST_DRIVER=log
+
+To
+BROADCAST_DRIVER=pusher
+```
 
 **5 - Running the API**
 
