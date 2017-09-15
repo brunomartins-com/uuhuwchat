@@ -91,26 +91,48 @@ I made all project in nearly 16 hours split on three days.
         Email: lois@email.com
         Password: 654321
 ```
-**4 - Running the API**
+**4 - Configuring the real time service (Pusher)**
 
-- 4.1 - On "uuhuwchat" folder, execute the command to generate a key
+You will need a real time service as Pusher for made it happen.
+
+- 5.1 - Access this website <a href="https://pusher.com" target="_blank">www.pusher.com</a> and create a free account.
+- 5.2 - After login, go to "Your Apps" in left side bar menu and create a new app.
+- 5.3 - At the end of creation, uou will see some data like:
+```
+app_id = "XXXXX"
+key = "XXXXXXXXXXXXXXXXXXX"
+secret = "XXXXXXXXXXXXXXXXXXXX"
+cluster = "XXX"
+```  
+- 5.4 - Copy these information and paste in your .env file (in the end of file)
+```
+PUSHER_APP_ID=PASTE HERE
+PUSHER_APP_KEY=PASTE HERE
+PUSHER_APP_SECRET=PASTE HERE
+PUSHER_APP_CLUSTER=PASTE HERE
+```
+
+**5 - Running the API**
+
+- 5.1 - On "uuhuwchat" folder, execute the command to generate a key
 ```bash
     php artisan key:generate
 ```
-- 4.2 - Execute this command on terminal for start the server
+- 5.2 - Execute this command on terminal for start the server
 ```bash
     php artisan serve
 ```
-- 4.3 - Click on or copy the address below and paste on your browser
+- 5.3 - Click on or copy the address below and paste on your browser
 
     <a href="http://localhost:8000/chat" target="_blank">http://localhost:8000/chat</a>
     or
     <a href="http://127.0.0.1:8000/chat" target="_blank">http://127.0.0.1:8000/chat</a>
     
-**5 - How can I test?**
-- 5.1 Open two different browsers like Safari, Google Chrome, Mozilla Firefox, or Opera and enter the address above.
-- 5.2 Use those two default users above in each browser to enter on chat.
-- 5.3 Send messages and enjoy with the real time updating.
+**6 - How can I test?**
+- 6.1 Open two different browsers like Safari, Google Chrome, Mozilla Firefox, or Opera and enter the address above.
+- 6.2 Use those two default users above in each browser to enter on chat.
+- 6.3 Send messages and enjoy with the real time updating.
+
 
 ## Demo
 - <a href="http://uuhuwchat.brunomartins.com/chat" target="_blank">http://uuhuwchat.brunomartins.com/chat</a>
